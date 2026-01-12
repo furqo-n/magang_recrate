@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optima Multi Sinergi: Teknologi</title>
+    <title>Optima Multi Sinergi: Software Company</title>
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -66,78 +66,229 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-5">
-        <div class="row g-4 py-3 px-5 justify-content-center">
-            <div class="col-md-4">
-                <div class="text-center btn-outline-none shadow p-3 h-100 bg-body rounded"
-                    style="background-color: #ffffff !important;">
-                    <div class="container-fluid py-4">
-                        <div class="row">
-                            <div class="col-md-12 px-1">
-                                <img src="src/Android Developer.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Android Developer</h3>
-                    <div class="container pb-5">
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#careerModal"
-                            onclick="showCareerDetail('android')">Details</button>
+
+    <!-- Hero Section (Breadcrumb) -->
+    <section class="py-4 bg-light text-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-0 text-uppercase" style="color: #ccc;">Detail Aplikasi</h5>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-md-end mb-0 bg-transparent p-0">
+                            <li class="breadcrumb-item"><a href="index.html"
+                                    class="text-decoration-none text-muted small">Home</a></li>
+                            <li class="breadcrumb-item"><a href="portofolio.html"
+                                    class="text-decoration-none text-muted small">Portfolio</a></li>
+                            <li class="breadcrumb-item active small text-muted" aria-current="page">Detail</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <!-- Project Title -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold display-5 mb-3" id="project-title">Loading...</h1>
+                    <div class="mx-auto"
+                        style="width: 100px; height: 4px; background: linear-gradient(90deg, #FDBF11 0%, #ff6b6b 100%); border-radius: 2px;">
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-center btn-outline-none shadow p-3 h-100 bg-body rounded"
-                    style="background-color: #ffffff !important;">
-                    <div class="container-fluid py-4">
-                        <div class="row">
-                            <div class="col-md-12 px-1">
-                                <img src="src/Junior Fullstack Programmer.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
+
+            <!-- Top Section: Image & Details -->
+            <div class="row g-5 mb-5 align-items-center">
+                <!-- Left: Image -->
+                <div class="col-lg-7">
+                    <div class="shadow rounded-3 overflow-hidden position-relative">
+                        <img src="" alt="Project Image" id="project-image" class="w-100 h-100 object-fit-cover">
                     </div>
-                    <h3>Junior Fullstack Programmer</h3>
-                    <div class="container pb-5">
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#careerModal"
-                            onclick="showCareerDetail('fullstack')">Details</button>
+                </div>
+
+                <!-- Right: Application Details -->
+                <div class="col-lg-5">
+                    <h3 class="fw-bold mb-4 position-relative pb-2">
+                        Detail Aplikasi
+                        <span class="position-absolute bottom-0 start-0"
+                            style="width: 60px; height: 3px; background: #FDBF11;"></span>
+                    </h3>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-1">Nama :</h6>
+                        <p class="text-muted" id="detail-name">-</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-1">Base Pengembangan :</h6>
+                        <p class="text-muted" id="detail-category">-</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-1">Tools Pengembangan :</h6>
+                        <p class="text-muted" id="detail-tools">-</p>
+                    </div>
+
+                    <a href="#" class="btn btn-warning text-dark fw-bold px-4 py-2 rounded-0 shadow-sm"
+                        style="background: linear-gradient(90deg, #FDBF11 0%, #ffca2c 100%); border: none;">
+                        DEMO APLIKASI >
+                    </a>
+                </div>
+            </div>
+
+            <!-- Description Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="fw-bold mb-4 position-relative pb-2">
+                        Deskripsi Aplikasi
+                        <span class="position-absolute bottom-0 start-0"
+                            style="width: 60px; height: 3px; background: #FDBF11;"></span>
+                    </h3>
+                    <div class="text-muted lh-lg text-justify" id="project-description" style="text-align: justify;">
+                        Loading description...
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-center btn-outline-none shadow p-3 h-100 bg-body rounded"
-                    style="background-color: #ffffff !important;">
-                    <div class="container-fluid py-4">
-                        <div class="row">
-                            <div class="col-md-12 px-1">
-                                <img src="src/System Implementator - Jawa Timur.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
+
+            <!-- Keunggulan Section -->
+            <div class="py-5"
+                style="background-color: #f9f9f9; margin-left: -calc(var(--bs-gutter-x) * .5); margin-right: -calc(var(--bs-gutter-x) * .5);">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-3">Keunggulan <span
+                                style="position: relative; display: inline-block;">Aplikasi<span
+                                    style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background: rgba(253, 191, 17, 0.3); z-index: -1;"></span></span>
+                        </h2>
+                        <p class="text-muted mx-auto" style="max-width: 600px;">
+                            Spesifikasi teknis dari Aplikasi <span id="project-title-display"></span> yang dikembangkan
+                            adalah sebagai berikut
+                        </p>
                     </div>
-                    <h3>System Implementator - Jawa Timur</h3>
-                    <div class="container pb-5">
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#careerModal"
-                            onclick="showCareerDetail('impl-jatim')">Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-center btn-outline-none shadow p-3 h-100 bg-body rounded"
-                    style="background-color:#ffffff !important;">
-                    <div class="container-fluid py-4">
-                        <div class="row">
-                            <div class="col-md-12 px-1">
-                                <img src="src/System Implementator - Papua.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <h3>System Implementator - Papua</h3>
-                    <div class="container pb-5">
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#careerModal"
-                            onclick="showCareerDetail('impl-papua')">Details</button>
+
+                    <div class="row g-4 justify-content-center" id="project-features">
+                        <!-- Features will be injected here -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <script>
+        // Get project ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        // Load project data when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if projectData exists
+            if (typeof projectData === 'undefined') {
+                return;
+            }
+
+            if (!projectId || !projectData[projectId]) {
+                // Handle missing project
+                return;
+            }
+
+            const project = projectData[projectId];
+
+            // Update page title
+            document.title = `${project.title} - Optima Multi Sinergi`;
+
+            // Data Population
+
+            // Header
+            setText('project-title', project.title);
+
+            // Breadcrumb (optional, handled by hero static text mostly, but checking ID validity)
+
+            // Image
+            const imgEl = document.getElementById('project-image');
+            if (imgEl) imgEl.src = project.image;
+
+            // Detail Info
+            setText('detail-name', project.title);
+            setText('detail-category', project.category);
+            setText('detail-tools', project.tools);
+
+            // Description
+            const descEl = document.getElementById('project-description');
+            if (descEl) descEl.innerHTML = project.deskripsi; // Use innerHTML for <br> support
+
+            // Keunggulan Subtitle
+            setText('project-title-display', project.title);
+
+            // Features Grid
+            const featuresContainer = document.getElementById('project-features');
+            if (featuresContainer) {
+                featuresContainer.innerHTML = '';
+
+                // Judul spesifik sesuai permintaan user
+                const featureTitles = ["Open Source", "Inovasi", "Fleksibel", "Cepat & Efektif"];
+
+                project.keunggulan.forEach((feature, index) => {
+                    const title = featureTitles[index] || `Keunggulan ${index + 1}`; // Fallback jika lebih dari 4
+
+                    const div = document.createElement('div');
+                    div.className = 'col-md-6 mb-4';
+                    div.innerHTML = `
+                        <div class="d-flex align-items-start h-100">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="bi bi-check-circle-fill fs-3" style="color: #FDBF11;"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-2">${title}</h5>
+                                <p class="text-muted small mb-0 text-justify">${feature}</p>
+                            </div>
+                        </div>
+                    `;
+                    featuresContainer.appendChild(div);
+                });
+            }
+        });
+
+        // Helper function
+        function setText(id, text) {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        }
+    </script>
+
+    <style>
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "›";
+            color: #6c757d;
+        }
+
+        .breadcrumb-item a {
+            color: #667eea;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-item a:hover {
+            color: #764ba2;
+        }
+    </style>
+
     <!-- Footer -->
     <footer class="modern-footer">
         <div class="footer-main">
@@ -186,6 +337,7 @@
                             </ul>
                         </div>
                     </div>
+
                     <!-- Contact Info -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
@@ -230,34 +382,6 @@
         </div>
     </footer>
 
-    <!-- Career Detail Modal -->
-    <div class="modal fade" id="careerModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-5 mb-4 mb-md-0">
-                            <img src="" id="careerModalImage" class="img-fluid rounded shadow-sm" alt="Career Image">
-                        </div>
-                        <div class="col-md-7">
-                            <h3 id="careerModalTitle" class="fw-bold mb-3">Job Title</h3>
-                            <div id="careerModalContent">
-                                <!-- Dynamic Content will appear here -->
-                            </div>
-                            <div class="mt-4">
-                                <a href="mailto:hrd@optimasolution.co.id" class="btn btn-primary px-4 py-2">Apply
-                                    Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Image Preview Modal -->
     <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -270,10 +394,9 @@
             </div>
         </div>
     </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
-
-</html>

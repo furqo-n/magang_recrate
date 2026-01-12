@@ -365,7 +365,11 @@
     background: #fff;
     padding: 15px;
     border-radius: 12px;
-    height: auto;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #f1f1f1;
